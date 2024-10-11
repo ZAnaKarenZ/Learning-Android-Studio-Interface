@@ -11,11 +11,11 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/main"
+        app:layout_constraintBottom_toTopOf="@id/usuario"
         app:layout_constraintStart_toStartOf="@id/main"
         android:text="Login"
         android:textSize="48sp"
-        android:layout_marginTop="80dp"
+        android:layout_margin="80dp"
         android:layout_marginStart="80dp"
         ></TextView>
 
@@ -23,11 +23,10 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@id/login"
         app:layout_constraintStart_toStartOf="@id/main"
         android:text="Ingresa tu usuario y contraseña"
         android:textSize="18sp"
-        android:layout_marginTop="60dp"
         android:layout_marginStart="80dp"
         ></TextView>
 
@@ -40,7 +39,8 @@
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="@id/main"
         app:layout_constraintStart_toStartOf="@id/main"
-        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintTop_toTopOf="@id/main"
+        app:layout_constraintBottom_toBottomOf="@id/main"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         />
@@ -56,6 +56,19 @@
         android:padding="10dp"
         android:layout_marginTop="20dp"
         android:inputType="textPassword"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+    />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/contraseña"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginTop="80dp"
+        android:text="Iniciar Sesión"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
     />
