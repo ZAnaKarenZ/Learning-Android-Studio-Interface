@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Entrega1"
         tools:targetApi="31">
         <activity
+            android:name=".Ecuaciones"
+            android:exported="false" />
+        <activity
+            android:name=".Temperatura"
+            android:exported="false" />
+        <activity
+            android:name=".PiedraPapelTijera"
+            android:exported="false" />
+        <activity
+            android:name=".activity_one"
+            android:exported="false" />
+        <activity
             android:name=".Choose"
             android:exported="false"
             android:label="@string/title_activity_choose"

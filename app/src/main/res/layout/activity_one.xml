@@ -5,72 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".activity_one">
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/elegir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/usuario"
+        app:layout_constraintBottom_toTopOf="@id/ppt"
         app:layout_constraintStart_toStartOf="@id/main"
-        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:text="Elegir actividad"
         android:textSize="48sp"
         android:layout_margin="80dp"
         android:layout_marginStart="80dp"
         ></TextView>
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/login"
-        app:layout_constraintStart_toStartOf="@id/main"
-        android:text="Ingresa tu usuario y contraseña"
-        android:textSize="18sp"
-        android:layout_marginStart="80dp"
-        ></TextView>
-
-    <EditText
-        android:id="@+id/usuario"
+    <Button
+        android:id="@+id/ppt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Usuario"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintTop_toTopOf="@id/main"
         app:layout_constraintBottom_toBottomOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginTop="80dp"
+        android:text="Piedra, Papel o Tijera"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         />
 
-    <EditText
-        android:id="@+id/contraseña"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/usuario"
-        app:layout_constraintStart_toStartOf="@id/main"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        android:hint="Contraseña"
-        android:padding="10dp"
-        android:layout_marginTop="20dp"
-        android:inputType="textPassword"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-    />
-
     <Button
-        android:id="@+id/Button"
+        android:id="@+id/temperatura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/contraseña"
+        app:layout_constraintTop_toTopOf="@id/ppt"
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintEnd_toEndOf="@id/main"
         android:layout_marginTop="80dp"
-        android:text="Iniciar Sesión"
+        android:text="Temperatura"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-    />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
