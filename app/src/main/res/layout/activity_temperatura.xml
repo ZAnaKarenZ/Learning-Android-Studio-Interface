@@ -11,7 +11,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/usuario"
+        app:layout_constraintBottom_toTopOf="@id/celcius"
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintEnd_toEndOf="@id/main"
         android:text="Convertidor de temperatura"
@@ -21,11 +21,11 @@
         ></TextView>
 
     <EditText
-        android:id="@+id/usuario"
+        android:id="@+id/celcius"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Usuario"
+        android:hint="Celcius"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="@id/main"
         app:layout_constraintStart_toStartOf="@id/main"
@@ -36,13 +36,13 @@
         />
 
     <EditText
-        android:id="@+id/contraseña"
+        android:id="@+id/farenheit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/usuario"
+        app:layout_constraintTop_toBottomOf="@id/celcius"
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintEnd_toEndOf="@id/main"
-        android:hint="Contraseña"
+        android:hint="Farenheit"
         android:padding="10dp"
         android:layout_marginTop="20dp"
         android:inputType="textPassword"
@@ -54,7 +54,7 @@
         android:id="@+id/Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/contraseña"
+        app:layout_constraintBottom_toBottomOf="@id/main"
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintEnd_toEndOf="@id/main"
         android:layout_marginTop="80dp"
