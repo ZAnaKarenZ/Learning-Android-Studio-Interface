@@ -18,11 +18,13 @@ class PiedraPapelTijera : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-    val button1 = findViewById<Button>(R.id.back)
-    button1.setOnClickListener{
-        val intent = Intent(this, PiedraPapelTijera::class.java)
-        startActivity(intent)
+
+        val button = findViewById<Button>(R.id.back)
+        button.setOnClickListener{
+            val intent = Intent(this, activity_one::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }
