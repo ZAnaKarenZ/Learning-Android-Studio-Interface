@@ -1,6 +1,4 @@
 package com.example.entrega1
-import android.text.Editable
-import android.text.TextWatcher
 import android.widget.EditText
 import android.widget.Toast
 import android.content.Intent
